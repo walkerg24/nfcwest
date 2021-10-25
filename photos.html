@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Team Records</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar" id="myNavBar">
+        <a href=""><img scr="" alt=""></a>
+        <a href="index.html">League News</a>
+        <a href="">Scores</a>
+        <a href="">Schedule</a>
+        <a href="teams.html">Teams</a>
+        <a href="">Players</a>
+        <a href="">Videos</a>
+        <a href="photos.html" class="active">Photos</a> 
+        <a href="">Stats</a>
+        <a href="">Standings</a>
+    </div>
+
+    <h1>NFC WEST QUARTERBACKS</h1>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="russell_wilson.jpg" style="max-width:70%">
+          <div class="text">Russell Wilson</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="kyler_murray.jpeg" style="max-width:70%">
+          <div class="text">Kyler Murray</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="matthew stafford.png" style="max-width:70%">
+          <div class="text">Matthew Stafford</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="jimmy_garoppolo.jpg" style="max-width:70%">
+            <div class="text">Jimmy Garoppolo</div>
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+</body>
+
+
+
+</html>
